@@ -1,0 +1,136 @@
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.hero img{
+    margin-top: 150px;
+    transition: 0.5s;
+}
+.hero h1{
+    text-align: center;
+    width: 70%;
+    font-size: 75px;
+    font-weight: 600;
+}
+.hero h1 span{
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+
+}
+
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.hero-connect{
+    border-radius: 50px;
+    padding: 16px 27px;
+    background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+    cursor: pointer;
+}
+.hero-resume{
+    padding: 17px 70px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.hero-connect:hover{
+    border: 2px solid #fff;
+}
+.hero-resume:hover{
+    border-color: #b415ff;
+}
+.hero img:hover{
+    transform: scale(1.05);
+}
+/* @media(max-width:375px ){
+    .hero img{
+        margin-top: 120px;
+        width: 260px;
+    }
+    .hero h1{
+        width: 90%;
+        margin-top: 50px;
+        font-size: 50px;
+    }
+    .hero p{
+        width: 60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 10px 0px;
+    }
+    .hero-action{
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .hero-connect{
+        /* padding: 20px 30px; 
+        width: 135px;
+        height: 80px;
+        padding-top: 10px;
+        border-radius: 40px;
+    }
+    .hero-resume{
+        padding: 20px 50px;
+        border-radius: 40px;
+    }
+} */
+@media (max-width: 768px) {
+    .hero img {
+        margin-top: 120px; /* Adjust spacing above the image */
+        width: 100%; /* Make the image scale with the container */
+        max-width: 260px; /* Ensure it doesn't exceed the intended size */
+    }
+    .hero h1 {
+        width: 90%; /* Maintain width relative to the container */
+        margin-top: 50px; /* Adjust margin for better spacing */
+        font-size: 50px; /* Ensure large enough text for visibility */
+        line-height: 1.2; /* Maintain good readability */
+    }
+    .hero p {
+        width: 90%; /* Allow text to adapt within container width */
+        font-size: 18px; /* Maintain legibility */
+        line-height: 1.6; /* Enhance readability */
+        margin: 10px auto; /* Center and add vertical spacing */
+        text-align: center; /* Center-align text for better aesthetics */
+    }
+    .hero-action {
+        display: flex; /* Ensure buttons align properly */
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        gap: 16px; /* Spacing between actions */
+        font-size: 16px; /* Adjust font for better fit */
+        font-weight: 500; /* Maintain emphasis */
+        margin-bottom: 30px; /* Reduce bottom margin for compact layout */
+        justify-content: center; /* Center-align actions */
+    }
+    .hero-connect {
+        width: 135px; /* Fixed width for consistency */
+        height: 58px; /* Fixed height for balance */
+        padding: 10px 15px; /* Adjust padding for better fit */
+        border-radius: 40px; /* Rounded corners for aesthetic appeal */
+        display: flex; /* Ensure content alignment */
+        align-items: center; /* Center-align content */
+        justify-content: center; /* Center-align content */
+    }
+    .hero-resume {
+        padding: 15px 30px; /* Adjust padding for responsiveness */
+        border-radius: 40px; /* Maintain rounded corners */
+        text-align: center; /* Center-align button text */
+    }
+}

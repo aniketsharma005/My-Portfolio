@@ -1,0 +1,366 @@
+/* .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+
+}
+.nav-menu {
+   font-size: 20px;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   list-style-type: none;
+   /* align-items: center; 
+   gap: 60px;
+   /* padding-right: 332px; 
+
+   
+}
+.nav-connect{
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    padding: 21px 31px;
+    border-radius: 50px;
+    font-size: 19px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.nav-menu li p{
+    margin-bottom: 0px;
+}
+.nav-menu li img{
+    display: flex;
+    margin: auto;
+
+}
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+.nav-mob-close{
+    display: none;
+}
+.nav-mob-open{
+    display: none;
+} */
+/* @media(max-width:768px){
+    .navbar{
+        margin: 20px 50px;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 9px;
+        padding-bottom: 5px;
+    }
+    .nav-mob-close{
+        display: block;
+        position: relative;
+        top: 0;
+        left: 315px;
+        width: 32px;
+
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        /* align-items: start; 
+        top: 0;
+        gap: 30px;
+        background: #1f0016;
+        width: 350px;
+        height: 59%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -35px;
+    }
+    .nav-menu li{
+        padding-left:100px ;
+        font-size: 30px;
+        flex-direction: row;
+        gap: 20px;
+    }
+} 
+
+
+/* @media (max-width: 768px) {
+    .navbar {
+        margin: 0; /* Remove extra margins for better alignment 
+        padding: 10px 20px; /* Add padding for consistency 
+        display: flex;
+        justify-content: space-between;
+        align-items: center; /* Ensure items are vertically centered 
+    }
+
+    .nav-connect {
+        display: none; /* Hide for mobile view 
+    }
+
+    .nav-mob-open {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 10; /* Ensure it's above other elements 
+        cursor: pointer; /* Add pointer for better UX 
+    }
+
+    .nav-mob-close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 32px;
+        cursor: pointer; /* Add pointer for better UX 
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start for better readability 
+        position: fixed;
+        top: 0;
+        right: -350px; /* Start off-screen 
+        gap: 20px;
+        background: #1f0016;
+        /* width: 350px;
+        height: 100%; Extend to full height for a proper mobile menu 
+        z-index: 9;
+        padding: 20px;
+        transition: right 0.5s ease; /* Smooth slide-in animation 
+    }
+
+    .nav-menu.active {
+        right: 0; /* Slide menu into view 
+    }
+
+    .nav-menu li {
+        padding: 10px 20px; /* Better padding for touch targets 
+        font-size: 20px; /* Adjust size for better readability 
+        list-style: none; /* Remove default bullet points 
+    }
+
+    .nav-menu li a {
+        color: #fff;
+        text-decoration: none; /* Remove underline 
+        transition: color 0.3s ease; /* Add hover effect 
+    }
+
+    .nav-menu li a:hover {
+        color: #ff4081; /* Highlight links on hover 
+    }
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto; /* Center the navbar horizontally 
+    padding: 0 20px; /* Add some padding for spacing 
+    max-width: 1200px; /* Limit maximum width 
+}
+
+.nav-menu {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 40px; /* Adjust gap for better spacing 
+}
+
+/* .nav-connect {
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    padding: 15px 30px; /* Adjust padding for a balanced look 
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add shadow transition 
+    color: white; /* Ensure text is visible 
+    border: none; /* Remove any default border 
+}
+
+.nav-connect:hover {
+    transform: scale(1.1); /* Slightly larger hover effect 
+    box-shadow: 0 5px 15px rgba(186, 35, 225, 0.4); /* Add a shadow for depth 
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin: 0; /* Remove unnecessary margins 
+}
+
+.nav-menu li img {
+    display: block; /* Adjust image alignment 
+    margin: 0 auto; /* Center images within list items 
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease; /* Smooth hover effect for links 
+}
+
+.anchor-link:hover {
+    color: #da7c25; /* Highlight color for hover 
+}
+
+.nav-mob-close, 
+.nav-mob-open {
+    display: none; /* Hidden by default for desktop 
+} 
+
+/* @media (max-width: 768px) {
+    .navbar {
+        margin: 10px 20px; /* Adjust margins for smaller screens *
+        padding: 10px 0; /* Reduce padding 
+    }
+
+    .nav-menu {
+        display: none; /* Hidden for mobile until toggled 
+        flex-direction: column; /* Stack menu items vertically 
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        background-color: #1f0016;
+        width: 70%;
+        gap: 20px;
+        padding: 20px;
+        transition: right 0.5s ease; /* Smooth slide-in effect 
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        right: 0; /* Slide menu into view 
+    }
+
+    .nav-mob-open {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 1000; /* Above the menu 
+        color: white;
+    }
+
+    .nav-mob-close {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+    }
+} */
+.navbar{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    padding-left: 50px;
+}
+.nav-connect{
+    padding: 14px 24px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+     gap: 5px;
+     cursor: pointer;
+}
+.nav-menu li img{
+     display: flex;
+     margin: auto;
+}
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+.nav-mob-close{
+    display: none;
+}
+.nav-mob-open{
+    display: none;
+}
+@media(max-width:768px){
+    .navbar{
+        margin: 20px 50px;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+    .nav-mob-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 260px;
+        width: 30px;
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        gap: 30px;
+        align-items: start;
+        background-color: #1f0016;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+    .nav-menu li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+}
