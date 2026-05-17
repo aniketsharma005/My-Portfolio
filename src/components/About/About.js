@@ -8,12 +8,12 @@ const About = () => {
   return (
     <div id='About' className='about'>
         <div className='about-title'>
-            <h1>About Us</h1>
+            <h1>About Me</h1>
             <img src={theme_pattern} alt=" " />
         </div>
         <div className='about-sections'>
             <div className='about-left'>
-                <img style={{width:"401px", height:"602", borderRadius:"50px"}} src={aniket3} alt=''/>
+                <img src={aniket3} alt='Aniket Sharma'/>
             </div>
             <div className='about-right'>
                 <div className='about-para'>

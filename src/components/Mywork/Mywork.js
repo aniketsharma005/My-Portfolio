@@ -13,13 +13,13 @@ export default function Mywork() {
             <img src={theme_pattern} alt=''/>
         </div>
         <div className='mywork-container'>
-          {mywork_data.map((work,index)=>{
-        return <img key={index} src={work.w_img} alt='' />
+          {mywork_data.map((work)=>{
+        return <img key={work.w_no} src={work.w_img} alt={work.w_name} />
           })}
         </div>
         <div className='mywork-showmore'>
             <p>Show more</p>
-            <img style={{paddingbottom:"10px"}} src={arrow_icon} alt='' />
+            <img style={{paddingBottom:"10px"}} src={arrow_icon} alt='' />
         </div>
     </div>
   )

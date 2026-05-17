@@ -8,6 +8,13 @@
     margin-top: 150px;
     transition: 0.5s;
 }
+.hero-profile-img{
+    width: min(320px, 80vw);
+    height: 420px;
+    border-radius: 36px;
+    object-fit: cover;
+    object-position: center top;
+}
 .hero h1{
     text-align: center;
     width: 70%;
@@ -92,10 +99,11 @@
     }
 } */
 @media (max-width: 768px) {
-    .hero img {
+    .hero .hero-profile-img {
         margin-top: 120px; /* Adjust spacing above the image */
-        width: 100%; /* Make the image scale with the container */
-        max-width: 260px; /* Ensure it doesn't exceed the intended size */
+        width: min(260px, 82vw);
+        height: 340px;
+        border-radius: 28px;
     }
     .hero h1 {
         width: 90%; /* Maintain width relative to the container */

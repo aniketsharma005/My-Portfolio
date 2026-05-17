@@ -96,6 +96,11 @@
     transition: 0.5s;
 }
 .about-left img{
+    width: 360px;
+    height: 460px;
+    border-radius: 36px;
+    object-fit: cover;
+    object-position: center top;
     transition: 0.5s;
 }
 .about-left img:hover{
